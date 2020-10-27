@@ -1,0 +1,7 @@
+numpy
+math
+scikit-learn
+tox
+black
+isort
+-e .
