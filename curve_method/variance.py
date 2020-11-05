@@ -2,25 +2,26 @@ import math
 from sklearn.cluster import KMeans
 
 def cluster_variance(X, centroids, labels):
-    '''
+    """
     Returns the within-cluster variance for a particular clustering solution.
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     centroids : ndarray
-        The coordinates of each cluster center, where each column
-        represents an axis and each row represents a centroid.
+        A 2D array of coordinates where each row represents a cluster 
+        center and each column represents an axis.
     labels : ndarray
-        The index of the cluster that each sample belongs to.
+        A 1D array containing the index of the cluster that each sample 
+        belongs to.
     
     Returns
     -------
     float
         The sum of within-cluster variance across all clusters.
-    '''
+    """
     total = 0
     # iterate through the rows of input data
     for i in range(X.shape[0]):
@@ -35,14 +36,14 @@ def cluster_variance(X, centroids, labels):
     return total
 
 def variance_list(X, k_values):
-    '''
+    """
     Returns the total within-cluster variances for a set of k-values.
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     k_values : list
         A range of desired k-values.
     
@@ -50,7 +51,7 @@ def variance_list(X, k_values):
     -------
     list
         Within-cluster variance for each k in k_values.
-    '''
+    """
     within_vars = []
     for k in k_values:
         # perform k-means clustering on input data for each k-value
@@ -63,15 +64,15 @@ def variance_list(X, k_values):
     return within_vars
 
 def variance_deltas(X, k_max):
-    '''
+    """
     Returns the change in variance from k-1 to k for each k-value in 
     the range [2, k_max].
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     k_max : int
         The maximum desired k-value.
     
@@ -80,7 +81,7 @@ def variance_deltas(X, k_max):
     dict
         The change in variance for each k-value, where k is the key 
         and delta is the value.
-    '''
+    """
     scores = {}
     deltas = {}
     # iterate through all k_values needed to generate curvature indices
@@ -103,14 +104,14 @@ def variance_deltas(X, k_max):
     return deltas
 
 def curvature_indices(X, k_max):
-    '''
+    """
     Returns the curvature index for each k-value in the range [2,k_max].
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     k_max : int
         The maximum desired k-value.
     
@@ -119,7 +120,7 @@ def curvature_indices(X, k_max):
     dict
         The computed curvature index of each k-value, where k is the key 
         and index is the value.
-    '''
+    """
     deltas = variance_deltas(X, k_max)
     indices = {}
     # compute curvature index for all k-values from k=2 to k=k_max

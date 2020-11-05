@@ -4,20 +4,20 @@ from .validation import validate_k, validate_deg
 from .variance import variance_list
 
 def scatter(X, k_max=12, line=False):
-    '''
+    """
     Generates an evaluation scatter plot of within-cluster variance 
     at each k-value in the range [2, k_max].
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     k_max : int
         The maximum desired k-value.
     line : bool
         Specify whether to connect points with a line.
-    '''
+    """
     validate_k(k_max)
     # set x axis scale for graph
     k_values = range(1, k_max + 1)
@@ -33,21 +33,21 @@ def scatter(X, k_max=12, line=False):
     plt.show()
 
 def polyfit(X, k_max=12, deg=3):
-    '''
+    """
     Generates a polynomial approximation graph of within-cluster variance
     at each k-value in the range [2, k_max] according to a certain polynomial
     degree.
 
     Parameters
     ----------
-    X : 2darray
-        An array of input data where each column represents a feature and 
-        each row represents a sample.
+    X : ndarray
+        A 2D array of input data where each row represents a sample and 
+        each column represents a feature.
     k_max : int
         The maximum desired k-value.
     deg : int
         The desired polynomial degree.
-    '''
+    """
     validate_k(k_max)
     validate_deg(deg)
     # set x axis scale for graph
