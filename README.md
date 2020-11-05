@@ -3,11 +3,11 @@
 A quantitative approach to select the optimal number of clusters.
 
 ## Table of contents
-* [Introduction] (#introduction)
-* [Installation] (#installation)
-* [Dependencies] (#dependencies)
-* [Examples] (#examples)
-* [References] (#references)
+* [Introduction](#introduction)
+* [Installation](#installation)
+* [Dependencies](#dependencies)
+* [Examples](#examples)
+* [References](#references)
 
 ## Introduction
 
@@ -26,7 +26,7 @@ several problems with this approach, as it is empirical and requires direct
 intervention. Additionally, the axes of the evaluation graph tend to lie on 
 significantly different scales, which makes it difficult to recognize the 
 optimal _k_ value visually. In contrast, the Curvature Method is a recent 
-approach that quantitatively finds the optimal _k_ value [1]. This 
+approach that quantitatively finds the optimal _k_ value [[1]](#1). This 
 approach can be used in a broad range of clustering applications, further 
 decoupling the learning process from human intervention.
 
@@ -40,7 +40,7 @@ decoupling the learning process from human intervention.
 * TODO
 
 ## References
-<a id="1">[1]</a>
+<a name="1"></a>
 Zhang, Y., Mańdziuk, J., Quek, C.H. and Goh, B.W., 2017.
 Curvature-based method for determining the number of clusters.
 Information Sciences, 415, pp.414-428.
