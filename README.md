@@ -1,19 +1,15 @@
-The Curvature Method
-====================
+# The Curvature Method
 
 A quantitative approach to select the optimal number of clusters.
 
-Table of contents
------------------
+## Table of contents
+* [Introduction] (#introduction)
+* [Installation] (#installation)
+* [Dependencies] (#dependencies)
+* [Examples] (#examples)
+* [References] (#references)
 
--  `Introduction <#introduction>`__
--  `Installation <#installation>`__
--  `Dependencies <#dependencies>`__
--  `Examples <#examples>`__
--  `References <#references>`__
-
-Introduction
-------------
+## Introduction
 
 Clustering is a major area in Unsupervised Machine Learning. In many
 clustering algorithms, the number of desired clusters is given as a
@@ -34,24 +30,17 @@ approach that quantitatively finds the optimal *k* value `[1] <#1>`__. This
 approach can be used in a broad range of clustering applications, further 
 decoupling the learning process from human intervention.
 
-Installation
-------------
-
+## Installation
 -  TODO
 
-Dependencies
-------------
-
+## Dependencies
 -  TODO
 
-Examples
---------
-
+## Examples
 -  TODO
 
-References
-----------
-
-[1] Zhang, Y., Mańdziuk, J., Quek, C.H. and Goh, B.W., 2017.
+## References
+<a id="1">[1]</a>
+Zhang, Y., Mańdziuk, J., Quek, C.H. and Goh, B.W., 2017.
 Curvature-based method for determining the number of clusters.
 Information Sciences, 415, pp.414-428.
