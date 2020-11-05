@@ -21,5 +21,5 @@ setup(
     ],
     packages=["curve_method"],
     include_package_data=True,
-    install_requires=["numpy", "matplotlib", "sklearn"]
+    install_requires=["numpy", "matplotlib", "scikit-learn"]
 )

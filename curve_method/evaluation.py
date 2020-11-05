@@ -2,15 +2,46 @@ import numpy as np
 from .validation import validate_k, validate_deg
 from .variance import curvature_indices
 
-# obtain curvature indices for all k-values up to a specified maximum
 def curve_scores(X, k_max=12):
+    '''
+    Returns the curvature index for each k-value in the range [2, k_max].
+
+    Parameters
+    ----------
+    X : 2darray
+        An array of input data where each column represents a feature and 
+        each row represents a sample.
+    k_max : int
+        The maximum desired k-value.
+    
+    Returns
+    -------
+    dict
+        The computed curvature index of each k-value, where k is the key 
+        and index is the value.
+    '''
     validate_k(k_max)
     indices = curvature_indices(X, k_max)
     # return list of curvature indices
     return indices
 
-# obtain the k-value with the highest curvature index
 def true_k(X, k_max=12):
+    '''
+    Returns the k-value with maximum curvature index value in the range [2, k_max].
+
+    Parameters
+    ----------
+    X : 2darray
+        An array of input data where each column represents a feature and 
+        each row represents a sample.
+    k_max : int
+        The maximum desired k-value.
+    
+    Returns
+    -------
+    int
+        The k-value with the highest curvature index value.
+    '''
     indices = curve_scores(X, k_max)
     max_index = -np.Inf
     best_k = -1
