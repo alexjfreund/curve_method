@@ -1,8 +1,7 @@
 The Curvature Method
 ====================
 
-A quantitative approach for selecting the optimal number of clusters in
-a data set.
+A quantitative approach to select the optimal number of clusters.
 
 Table of contents
 -----------------
