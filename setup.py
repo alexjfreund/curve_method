@@ -11,13 +11,15 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/alexjfreund/curve-method",
+    download_url="https://github.com/alexjfreund/curve_method/archive/v0.1.0.tar.gz",
     author="Alex Freund",
     author_email="alexjfreund@gmail.com",
     license="MIT",
     classifiers=[
         "Licence :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7"
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8"
     ],
     packages=["curve_method"],
     include_package_data=True,
