@@ -10,7 +10,7 @@ setup(
     description="A quantitative approach to select the optimal number of clusters in a dataset.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/alexjfreund/curve-method",
+    url="https://github.com/alexjfreund/curve_method",
     download_url="https://github.com/alexjfreund/curve_method/archive/v0.1.0.tar.gz",
     author="Alex Freund",
     author_email="alexjfreund@gmail.com",
