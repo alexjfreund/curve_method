@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="curve_method",
-    version="v0.1.0",
+    version="v0.1.1",
     description="A quantitative approach to select the optimal number of clusters in a dataset.",
     long_description=README,
     long_description_content_type="text/markdown",
