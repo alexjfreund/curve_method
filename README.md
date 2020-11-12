@@ -1,4 +1,5 @@
 # The Curvature Method
+[![Code Grade](https://www.code-inspector.com/project/16124/status/svg)](https://frontend.code-inspector.com/public/project/16124/curve_method/dashboard)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A quantitative approach to select the optimal number of clusters in a dataset.
