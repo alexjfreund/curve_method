@@ -95,5 +95,4 @@ Curvature-based method for determining the number of clusters.
 Information Sciences, 415, pp.414-428.
 
 ## License
-This project is licensed under the terms of the MIT License (see the file 
-LICENSE).
+This project is licensed under the terms of the MIT License.
