@@ -34,44 +34,47 @@ decoupling the learning process from human intervention.
 * TODO
 
 ## Examples
-To view the curvature index for each _k_ value, use the curve_scores() 
-function:
+First, obtain a dataset as a 2D NumPy array. In these examples, we use the 
+`make_blobs()` generator from Scikit-Learn to simulate a real dataset.
 ```python
-from curve_method import curve_scores
 from sklearn.datasets import make_blobs
 
 X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
+```
+
+### Evaluation
+To view the curvature index for each _k_ value up to a specified maximum, 
+use the `curve_scores()` function.
+```python
+from curve_method import curve_scores
+
 curve_scores(X, k_max=10)
 ```
 
-Or, to just obtain the _k_ value with maximum curvature, use the true_k()
-function:
+Or, to obtain the _k_ value with maximum curvature, use the `true_k()` 
+function.
 ```python
 from curve_method import true_k
-from sklearn.datasets import make_blobs
 
-X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 true_k(X, k_max=10)
 ```
 
-To help interpret results, the curve_method package can also produce an 
-evaluation graph for a range of _k_ values. To do this, use the scatter() 
-function:
+### Plotting
+To view the evaluation graph from the Curvature Method, use the 
+`scatter()` function. If desired, points can be connected on the graph by 
+setting `line=True`.
 ```python
 from curve_method import scatter
-from sklearn.datasets import make_blobs
 
-X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 scatter(X, k_max=12, line=False)
 ```
 
-Finally, the curve_method can also show an approximation of the evaluation 
-graph. This can be done with the polyfit() function:
+As an alternative, use the polyfit() function to generate an evaluation 
+graph with a polynomial approximation. The degree of the polynomial, _n_, 
+can be specified by setting `deg=n`.
 ```python
 from curve_method import polyfit
-from sklearn.datasets import make_blobs
 
-X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 polyfit(X, k_max=12, deg=3)
 ```
 
@@ -87,4 +90,5 @@ Curvature-based method for determining the number of clusters.
 Information Sciences, 415, pp.414-428.
 
 ## License
-This project is licensed under the terms of the MIT License (see the file LICENSE).
+This project is licensed under the terms of the MIT License (see the file 
+LICENSE).
