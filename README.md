@@ -1,4 +1,5 @@
 # The Curvature Method
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A quantitative approach to select the optimal number of clusters in a dataset.
 
