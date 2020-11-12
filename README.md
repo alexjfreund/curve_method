@@ -1,6 +1,8 @@
 # The Curvature Method
 [![Code Quality](https://www.code-inspector.com/project/16124/status/svg)](https://frontend.code-inspector.com/public/project/16124/curve_method/dashboard)
 [![Build Status](https://travis-ci.org/alexjfreund/curve_method.svg?branch=main)](https://travis-ci.org/alexjfreund/curve_method)
+[![codecov](https://codecov.io/gh/alexjfreund/curve_method/branch/main/graph/badge.svg)](https://codecov.io/gh/alexjfreund/curve_method)
+[![PyPI version](https://badge.fury.io/py/curve-method.svg)](https://badge.fury.io/py/curve-method)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A quantitative approach to select the optimal number of clusters in a dataset.
