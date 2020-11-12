@@ -2,7 +2,7 @@ def validate_k(k_max):
     """
     Validates user input for the maximum k-value by checking that k_max is both
     an integer and within the range [3,24] inclusive.
-    
+
     Parameters
     ----------
     k_max : int
@@ -19,7 +19,7 @@ def validate_k(k_max):
     # ensure that the given k-value is at least 3 and no more than 24
     if k_max < 3 or k_max > 24:
         raise ValueError("Maximum k-value must be within [3, 24].")
-   
+
 def validate_deg(deg):
     """
     Validates user input for the degree of a polynomial approximation function

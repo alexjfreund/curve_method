@@ -1,5 +1,5 @@
 import numpy as np
-from .validation import validate_k, validate_deg
+from .validation import validate_k
 from .variance import curvature_indices
 
 def curve_scores(X, k_max=12):
@@ -9,15 +9,15 @@ def curve_scores(X, k_max=12):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
-    
+
     Returns
     -------
     dict
-        The computed curvature index of each k-value, where k is the key 
+        The computed curvature index of each k-value, where k is the key
         and index is the value.
     """
     validate_k(k_max)
@@ -32,11 +32,11 @@ def true_k(X, k_max=12):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
-    
+
     Returns
     -------
     int

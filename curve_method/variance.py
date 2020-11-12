@@ -8,15 +8,15 @@ def cluster_variance(X, centroids, labels):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     centroids : ndarray
-        A 2D array of coordinates where each row represents a cluster 
+        A 2D array of coordinates where each row represents a cluster
         center and each column represents an axis.
     labels : ndarray
-        A 1D array containing the index of the cluster that each sample 
+        A 1D array containing the index of the cluster that each sample
         belongs to.
-    
+
     Returns
     -------
     float
@@ -42,11 +42,11 @@ def variance_list(X, k_values):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_values : list
         A range of desired k-values.
-    
+
     Returns
     -------
     list
@@ -65,21 +65,21 @@ def variance_list(X, k_values):
 
 def variance_deltas(X, k_max):
     """
-    Returns the change in variance from k-1 to k for each k-value in 
+    Returns the change in variance from k-1 to k for each k-value in
     the range [2, k_max].
 
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
-    
+
     Returns
     -------
     dict
-        The change in variance for each k-value, where k is the key 
+        The change in variance for each k-value, where k is the key
         and delta is the value.
     """
     scores = {}
@@ -110,15 +110,15 @@ def curvature_indices(X, k_max):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
-    
+
     Returns
     -------
     dict
-        The computed curvature index of each k-value, where k is the key 
+        The computed curvature index of each k-value, where k is the key
         and index is the value.
     """
     deltas = variance_deltas(X, k_max)

@@ -11,7 +11,7 @@ class TestEvaluation(unittest.TestCase):
         for k in range(2, 13):
             self.assertTrue(k in scores)
             self.assertTrue(isinstance(scores[k], float))
-    
+
     # validate return format of curve_scores for n=200, features=8, centers=12
     def test_big_curve(self):
         blobs, _ = make_blobs(n_samples=200, n_features=8, centers=12)
@@ -20,7 +20,7 @@ class TestEvaluation(unittest.TestCase):
         for k in range(2, 19):
             self.assertTrue(k in scores)
             self.assertTrue(isinstance(scores[k], float))
-    
+
     # validate return format of true_k for n=100, features=2, centers=4
     def test_small_k(self):
         blobs, _ = make_blobs(n_samples=100, n_features=2, centers=4)
@@ -28,7 +28,7 @@ class TestEvaluation(unittest.TestCase):
         self.assertTrue(isinstance(k, int))
         self.assertTrue(k >= 2)
         self.assertTrue(k <= 12)
-    
+
     # validate return format of true_k for n=200, features=8, centers=12
     def test_big_k(self):
         blobs, _ = make_blobs(n_samples=200, n_features=8, centers=12)

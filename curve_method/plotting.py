@@ -5,13 +5,13 @@ from .variance import variance_list
 
 def scatter(X, k_max=12, line=False):
     """
-    Generates an evaluation scatter plot of within-cluster variance 
+    Generates an evaluation scatter plot of within-cluster variance
     at each k-value in the range [2, k_max].
 
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
@@ -41,7 +41,7 @@ def polyfit(X, k_max=12, deg=3):
     Parameters
     ----------
     X : ndarray
-        A 2D array of input data where each row represents a sample and 
+        A 2D array of input data where each row represents a sample and
         each column represents a feature.
     k_max : int
         The maximum desired k-value.
