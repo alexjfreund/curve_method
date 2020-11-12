@@ -31,7 +31,9 @@ approach can be used in a broad range of clustering applications, further
 decoupling the learning process from human intervention.
 
 ## Installation
-* TODO
+```
+pip install curve_method
+```
 
 ## Examples
 First, obtain a dataset as a 2D NumPy array. In these examples, we use the 
