@@ -6,14 +6,14 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="curve_method",
-    version="0.1.0",
+    version="v0.1.0",
     description="A quantitative approach to select the optimal number of clusters in a dataset.",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/alexjfreund/curve-method",
     author="Alex Freund",
     author_email="alexjfreund@gmail.com",
-    licence="MIT",
+    license="MIT",
     classifiers=[
         "Licence :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
