@@ -8,6 +8,7 @@ A quantitative approach to select the optimal number of clusters in a dataset.
 * [Examples](#examples)
 * [Dependencies](#dependencies)
 * [References](#references)
+* [License](#license)
 
 ## Introduction
 
@@ -31,6 +32,7 @@ approach can be used in a broad range of clustering applications, further
 decoupling the learning process from human intervention.
 
 ## Installation
+This project can be installed using pip:
 ```
 pip install curve_method
 ```
