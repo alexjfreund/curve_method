@@ -70,7 +70,7 @@ scatter(X, k_max=12, line=False)
 ```
 
 As an alternative, use the polyfit() function to generate an evaluation 
-graph with a polynomial approximation. The degree of the polynomial, _n_, 
+graph with a polynomial approximation. The degree of the polynomial _n_ 
 can be specified by setting `deg=n`.
 ```python
 from curve_method import polyfit
@@ -85,7 +85,7 @@ polyfit(X, k_max=12, deg=3)
 
 ## References
 <a name="1"></a>
-Zhang, Y., Mańdziuk, J., Quek, C.H. and Goh, B.W., 2017.
+[1] Zhang, Y., Mańdziuk, J., Quek, C.H. and Goh, B.W., 2017.
 Curvature-based method for determining the number of clusters.
 Information Sciences, 415, pp.414-428.
 
