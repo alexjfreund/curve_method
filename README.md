@@ -36,8 +36,9 @@ decoupling the learning process from human intervention.
 ## Examples
 To view the curvature index for each _k_ value, use the curve_scores() 
 function:
-```
+```python
 from curve_method import curve_scores
+from sklearn.datasets import make_blobs
 
 X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 curve_scores(X, k_max=10)
@@ -45,8 +46,9 @@ curve_scores(X, k_max=10)
 
 Or, to just obtain the _k_ value with maximum curvature, use the true_k()
 function:
-```
+```python
 from curve_method import true_k
+from sklearn.datasets import make_blobs
 
 X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 true_k(X, k_max=10)
@@ -55,8 +57,9 @@ true_k(X, k_max=10)
 To help interpret results, the curve_method package can also produce an 
 evaluation graph for a range of _k_ values. To do this, use the scatter() 
 function:
-```
+```python
 from curve_method import scatter
+from sklearn.datasets import make_blobs
 
 X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 scatter(X, k_max=12, line=False)
@@ -64,8 +67,9 @@ scatter(X, k_max=12, line=False)
 
 Finally, the curve_method can also show an approximation of the evaluation 
 graph. This can be done with the polyfit() function:
-```
+```python
 from curve_method import polyfit
+from sklearn.datasets import make_blobs
 
 X, _ = make_blobs(n_samples=10000, n_features=4, centers=5)
 polyfit(X, k_max=12, deg=3)
